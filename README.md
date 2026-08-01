@@ -7,7 +7,7 @@ Delete the existing repository contents, then upload all files and folders from 
 
 ## URLs
 - `/` — Grivini homepage
-- `/labs/` — NTN Orbit application (direct, no iframe)
+- `/labs/` — Grivini NTN Lab application (direct, no iframe)
 - `/labs/ntn/` — redirects to `/labs/`
 - `/about/`
 - `/contact/`
