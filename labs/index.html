@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore Grivini NTN Lab v6.0.1: SIB19 ephemeris conversion, straight LOS visualization, UE-centric geometry, service analysis, and mobility playback.">
+  <meta name="theme-color" content="#07101c">
+  <meta property="og:title" content="NTN Lab v6.0.1 | Grivini">
+  <meta property="og:description" content="Explore Grivini NTN Lab v6.0.1: SIB19 ephemeris conversion, straight LOS visualization, UE-centric geometry, service analysis, and mobility playback.">
+  <meta property="og:type" content="website">
+  <title>NTN Lab v6.0.1 | Grivini</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css?v=6.0.1">
+  <script src="/assets/site.js?v=6.0.1" defer></script>
+</head>
+<body data-page="lab">
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="/" aria-label="Grivini home">
+      <span class="brand-mark" aria-hidden="true">G</span>
+      <span class="brand-word">GRIVINI</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-menu" class="site-menu" aria-label="Primary navigation">
+      <a data-nav="home" href="/">Home</a>
+      <a data-nav="lab" href="/labs/">NTN Lab</a>
+      <a data-nav="docs" href="/docs/">Documentation</a>
+      <a data-nav="about" href="/about/">About</a>
+      <a data-nav="contact" href="/contact/">Contact</a>
+      <a class="nav-launch" href="/labs/app/">Launch Lab <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="subhero section-shell lab-subhero">
+    <div>
+      <div class="eyebrow"><span class="live-dot"></span> CURRENT RELEASE · v6.0.1</div>
+      <h1>Grivini NTN Lab</h1>
+      <p class="subhero-lead">A browser-based UE-centric environment for exploring SIB19 satellite ephemeris, orbital propagation, line-of-sight geometry, service eligibility, and mobility behavior.</p>
+      <div class="hero-actions"><a class="button primary" href="/labs/app/">Launch application <span aria-hidden="true">↗</span></a><a class="button secondary" href="/docs/">Read documentation</a></div>
+    </div>
+    <div class="version-panel">
+      <span class="version-label">GRIVINI LABS</span>
+      <strong>6.0.1</strong>
+      <p>Straight LOS release</p>
+      <div class="version-status"><span></span> Public engineering preview</div>
+    </div>
+  </section>
+
+  <section class="section-shell content-section compact-top">
+    <div class="section-heading"><div><span class="kicker">ANALYSIS SURFACE</span><h2>One workspace, four connected views.</h2></div><p>Inputs, geometry, service analysis, and playback remain synchronized as the simulation time changes.</p></div>
+    <div class="module-grid">
+      <article><div class="module-icon">PV</div><h3>Ephemeris conversion</h3><p>Convert PositionVelocity-r17 state vectors to Orbital-r17 parameters and back, with engineering-value output and round-trip checks.</p></article>
+      <article><div class="module-icon">3D</div><h3>Orbit visualization</h3><p>Display full orbit rings, future trajectory, rotating-Earth ground tracks, time markers, direction indicators, and orbital-element guides.</p></article>
+      <article><div class="module-icon">LOS</div><h3>UE link geometry</h3><p>Render a true straight segment from the UE to visible satellites and compare elevation, azimuth, range, delay, RTT, and Doppler.</p></article>
+      <article><div class="module-icon">HO</div><h3>Service and mobility</h3><p>Apply a minimum-elevation rule, identify serving and candidate satellites, and generate a time-indexed mobility event log.</p></article>
+    </div>
+  </section>
+
+  <section class="section-shell split-panel">
+    <div>
+      <span class="kicker">CAMERA MODES</span>
+      <h2>Review the same pass from multiple engineering perspectives.</h2>
+      <p>Move from global context to the local UE view without resetting simulation state.</p>
+    </div>
+    <div class="camera-list">
+      <div><strong>Full Earth</strong><span>Global orbit and ground-track context</span></div>
+      <div><strong>UE Region</strong><span>Regional view centered near the UE</span></div>
+      <div><strong>UE Point of View</strong><span>Ground-up line-of-sight perspective with nine zoom levels</span></div>
+      <div><strong>Serving Satellite</strong><span>Camera centered on the active serving satellite</span></div>
+      <div><strong>Fit All</strong><span>Frame the UE and all configured satellites</span></div>
+    </div>
+  </section>
+
+  <section id="release" class="section-shell release-panel">
+    <div class="release-title"><span class="kicker">RELEASE NOTES</span><h2>What changed in v6.0.1</h2></div>
+    <div class="release-notes-grid">
+      <div class="release-note primary-note"><span>NEW</span><h3>Straight UE–satellite LOS links</h3><p>The earlier raised visual arc has been replaced with a true Cartesian line segment between the UE and each displayed satellite.</p></div>
+      <div class="release-note"><span>v6.0</span><h3>Professional navigation</h3><p>A collapsible sidebar, section shortcuts, and sidebar search make the application easier to navigate while preserving globe space.</p></div>
+      <div class="release-note"><span>CAMERA</span><h3>UE POV zoom controls</h3><p>Nine UE point-of-view framing levels support close inspection and wider ground-to-satellite context.</p></div>
+      <div class="release-note"><span>STABLE</span><h3>Existing analysis retained</h3><p>Conversion, propagation, service analysis, mobility events, playback, orbit paths, and metrics remain available.</p></div>
+    </div>
+  </section>
+
+  <section class="section-shell assumptions-panel">
+    <div><span class="kicker">MODEL AND RUNTIME</span><h2>Know what the preview assumes.</h2></div>
+    <div class="assumptions-list">
+      <p><strong>Propagation:</strong> two-body Keplerian model.</p>
+      <p><strong>Serving rule:</strong> highest elevation at or above the configured minimum elevation.</p>
+      <p><strong>Delay:</strong> geometric one-way satellite-to-UE propagation delay; RTT is twice that value.</p>
+      <p><strong>Runtime:</strong> the application is static and browser-based; CesiumJS and online map tiles require internet access.</p>
+    </div>
+  </section>
+
+  <section class="section-shell final-cta">
+    <div><span class="kicker">READY TO TEST</span><h2>Launch the current v6.0.1 application.</h2></div>
+    <a class="button primary" href="/labs/app/">Open NTN Lab <span aria-hidden="true">↗</span></a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand footer-brand" href="/" aria-label="Grivini home">
+        <span class="brand-mark" aria-hidden="true">G</span>
+        <span class="brand-word">GRIVINI</span>
+      </a>
+      <p>UE-centric visualization for 3GPP NTN ephemeris, geometry, and mobility analysis.</p>
+    </div>
+    <div class="footer-links">
+      <a href="/labs/">NTN Lab</a>
+      <a href="/docs/">Documentation</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <div class="footer-release">
+      <span>Current public release</span>
+      <strong>v6.0.1</strong>
+      <small>Engineering preview</small>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Grivini.</span>
+    <span>Calculations should be independently validated before formal test use.</span>
+  </div>
+</footer>
+</body></html>
